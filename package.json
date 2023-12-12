@@ -1,0 +1,28 @@
+{
+  "name": "yandexpracticum",
+  "version": "1.0.0",
+  "description": "Sprint 1. Chat app's frontend.",
+  "main": "",
+  "scripts": {
+    "dev": "vite",
+    "prod": "tsc && vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Sergey Konstantinov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oxdbxo/YandexPracticum/issues"
+  },
+  "homepage": "https://github.com/oxdbxo/YandexPracticum#readme",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "loadsh": "^0.0.4",
+    "vite": "^5.0.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
