@@ -1,9 +1,9 @@
 import {Component} from "../components";
-import {CenteredForm} from "../layout/centered_form/centered";
+import {CenteredForm} from "../forms/centered_form/centered";
 
 const template = `
-    <h2 class="font-error">Такой страницы нет</h2>
-    <p class="mt-3 mb-1 bold">Зато есть другие:</p>
+    <h2 class="font-error">Страница не найдена</h2>
+    <p class="mt-3 mb-1 bold font-grey">Но вы можете:</p>
     <p class="mt-1 ml-2 link">Войти в чат</p>
     <p class="mt-1 ml-2 link">Создать аккаунт</p>
 `;

@@ -39,7 +39,6 @@ export class Router {
                 root.replaceChildren(element)
            } else {
                const element = new page404().getElement()
-               console.log(element)
                root.replaceChildren(element)
            }
        }

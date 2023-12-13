@@ -1,23 +1,23 @@
 .mt-1 {
-  margin-top: 1vh;
+  margin-top: 1vh !important;
 }
 
 .mt-2 {
-  margin-top: 2vh;
+  margin-top: 2vh !important;
 }
 
 .mt-3 {
-  margin-top: 3vh;
+  margin-top: 3vh !important;
 }
 
 .mb-1 {
-  margin-bottom: 1vh;
+  margin-bottom: 1vh !important;
 }
 
 .ml-1 {
-  margin-left: 1vw;
+  margin-left: 1vw !important;
 }
 
 .ml-2 {
-  margin-left: 2vw;
+  margin-left: 2vw !important;
 }

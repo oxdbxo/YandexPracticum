@@ -2,16 +2,14 @@
   line-height: 2em;
 }
 
-h2 {
-  font-size: 2rem;
-  font-style: italic;
-  color: chocolate;
-}
-
 .bold {
   font-weight: 600;
 }
 
 .font-error {
-  color: #cb0006;
+  color: var(--color-error)
+}
+
+.font-grey {
+  color: var(--color-grey) !important;
 }

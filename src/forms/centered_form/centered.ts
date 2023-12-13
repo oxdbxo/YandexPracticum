@@ -3,7 +3,7 @@ import Handlebars from "handlebars";
 import './centered.css'
 
 const centeredTemplate = `
-<div class="centered_form_title">
+<div class="centered_form_title bold">
     {{title}}
 </div>
 <div class="centered_form_body">

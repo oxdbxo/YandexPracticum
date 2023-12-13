@@ -10,8 +10,20 @@ html {
 }
 
 body {
-  --ff-font: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol;
-  font-family: var(--ff-font);
+  --ff-common-font: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol;
+  --color-primary: #4E5FFF;
+  --color-secondary: #548dd7;
+  --color-grey: #777777;
+  --color-link: #1C1CE3;
+  --color-error: #CB0006;
+  --color-light: #FFFFFF;
+  --color-dark: #222222;
+  --button-font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-common-font);
+  user-select: none;
 }
 
 .full-fill {
@@ -19,11 +31,19 @@ body {
   width: 100%;
 }
 
+.w-100 {
+  width: 100% !important;
+}
+
 .relative {
   position: relative;
 }
 
 .link {
-  color: #1c1ce3;
+  color: var(--color-link);
   cursor: pointer;
+}
+
+.link:hover {
+  color: var(--color-primary);
 }
