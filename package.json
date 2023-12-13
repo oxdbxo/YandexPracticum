@@ -19,10 +19,10 @@
   "homepage": "https://github.com/oxdbxo/YandexPracticum#readme",
   "dependencies": {
     "handlebars": "^4.7.8",
-    "loadsh": "^0.0.4",
-    "vite": "^5.0.8"
+    "loadsh": "^0.0.4"
   },
   "devDependencies": {
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
   }
 }

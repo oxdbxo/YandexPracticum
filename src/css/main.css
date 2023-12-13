@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  --ff-font: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol;
+  font-family: var(--ff-font);
+}
+
+.full-fill {
+  height: 100%;
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.link {
+  color: #1c1ce3;
+  cursor: pointer;
+}

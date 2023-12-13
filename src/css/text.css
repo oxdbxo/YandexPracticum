@@ -1,0 +1,17 @@
+.p-2 {
+  line-height: 2em;
+}
+
+h2 {
+  font-size: 2rem;
+  font-style: italic;
+  color: chocolate;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.font-error {
+  color: #cb0006;
+}
