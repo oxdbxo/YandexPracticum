@@ -20,7 +20,8 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "handlebars": "^4.7.8",
-    "loadsh": "^0.0.4"
+    "loadsh": "^0.0.4",
+    "postcss-load-config": "^5.0.2"
   },
   "devDependencies": {
     "postcss": "^8.4.32",
@@ -33,5 +34,8 @@
   "engines": {
     "npm": ">=9.2.0",
     "node": ">=18.13.0"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
