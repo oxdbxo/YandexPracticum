@@ -18,11 +18,20 @@
   },
   "homepage": "https://github.com/oxdbxo/YandexPracticum#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.16",
     "handlebars": "^4.7.8",
     "loadsh": "^0.0.4"
   },
   "devDependencies": {
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "postcss-nesting": "^12.0.1",
+    "postcss-sorting": "^8.0.2",
     "typescript": "^5.3.3",
     "vite": "^5.0.8"
+  },
+  "engines": {
+    "npm": ">=9.2.0",
+    "node": ">=18.13.0"
   }
 }
