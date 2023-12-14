@@ -5,8 +5,9 @@
 }
 
 html {
-  height: 100vh;
-  width: 100vw;
+  overflow: hidden;
+  width: 100dvw;
+  height: 100dvh;
 }
 
 body {
@@ -21,6 +22,13 @@ body {
   --button-font-size: 16px;
   font-family: var(--ff-common-font);
   user-select: none;
+  overflow: auto;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .full-fill {
@@ -36,11 +44,3 @@ body {
   position: relative;
 }
 
-.link {
-  color: var(--color-link);
-  cursor: pointer;
-}
-
-.link:hover {
-  color: var(--color-primary);
-}

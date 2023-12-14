@@ -6,10 +6,18 @@
   font-weight: 600;
 }
 
-.font-error {
+.nobold {
+  font-weight: 400 !important;
+}
+
+.text-error {
   color: var(--color-error)
 }
 
-.font-grey {
+.text-grey {
   color: var(--color-grey) !important;
+}
+
+.text-italic {
+  font-style: italic;
 }

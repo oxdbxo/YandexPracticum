@@ -1,5 +1,4 @@
-import {Component} from "../components";
-import {CenteredForm} from "../forms/centered_form/centered";
+import {CenteredFormPage} from "../centered/centered";
 
 const template = `
     <h2 class="font-error">Страница не найдена</h2>
@@ -8,14 +7,8 @@ const template = `
     <p class="mt-1 ml-2 link">Создать аккаунт</p>
 `;
 
-export class page404 implements Component {
-    div: Node;
-
+export class Page404 extends CenteredFormPage {
     constructor() {
-        this.div = new CenteredForm("404", template).getElement();
-    }
-
-    getElement() {
-        return this.div;
+        super('404', template)
     }
 }
