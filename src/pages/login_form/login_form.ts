@@ -1,8 +1,8 @@
-import {CenteredFormPage} from "../centered/centered";
-import {router} from "../../app";
-import {loginTemplate} from "./login_form_tmpl";
+import {CenteredFormPage} from "../centered/centered.js";
+import {router} from "../../app.js";
+import {loginTemplate} from "./login_form_tmpl.js";
 import Handlebars from "handlebars";
-import {searchElementByName} from "../../functions";
+import {searchElementByName} from "../../functions.js";
 
 export class LoginForm extends CenteredFormPage {
     _registerButton?: HTMLElement;

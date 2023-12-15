@@ -1,15 +1,12 @@
-let http = require( "http" ),
-  pathUtils = require( "path" ),
-  express = require( "express" ),
-  app = express(),
-  port = 3000,
-  appDir = pathUtils.resolve( __dirname, "../dist" );
+import express from "express";
+import path from "path";
 
-app.use( express.static( appDir ) );
+let app = express()
+let port = 3000
 
-app.get( "*", function( req, res ) {
-  res.sendFile( pathUtils.resolve( appDir, "index.html" ) );
-} );
+app.use(express.static(path.resolve()+'/dist/'))
+const handler = (req, res) => res.sendFile(path.join(path.resolve(), "dist/index.html"))
+app.get('*', handler)
 
 app.listen(port, () => {
   console.log(`Server started on port ${port}`)

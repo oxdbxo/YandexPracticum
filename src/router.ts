@@ -60,23 +60,22 @@ export class Router {
                 if (route) {
                     this.setPage(route)
                 } else {
-                    this.setPage(this._getRoute('/404/'))
+                    this.setPage(this._getRoute('/404/'), false)
                 }
             }
         } catch (err) {
             console.error(err)
-            this.setPage(this._getRoute('/500/'))
+            this.setPage(this._getRoute('/500/'), false)
         }
     }
 
-    setPage(route: Route|undefined): void {
+    setPage(route: Route|undefined, setHistory: Boolean = true): void {
         if (route) {
             const obj = new (route.class)
             if (this._root) {
                 this._root.replaceChildren(obj.div)
             }
-            console.log(route)
-            if (window.history)
+            if (setHistory && window.history)
                 window.history.pushState([], '', route.path)
         }
     }

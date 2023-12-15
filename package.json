@@ -2,8 +2,8 @@
   "name": "yandexpracticum",
   "version": "1.0.0",
   "description": "Sprint 1. Chat app's frontend.",
-  "main": "",
   "type": "module",
+  "main": "",
   "scripts": {
     "start": "vite build && node src/server.js",
     "dev": "vite",

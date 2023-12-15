@@ -4,7 +4,7 @@ import {searchElementByName} from "../../functions";
 import {router} from "../../app";
 
 //Форма регистрации
-export class RegisterForm extends CenteredFormPage {
+export class RegistrationForm extends CenteredFormPage {
     _loginButton?: HTMLElement;
     constructor() {
         super('Регистрация', registerTemplate)

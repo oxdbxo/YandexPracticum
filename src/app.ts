@@ -1,12 +1,7 @@
 import {Router} from "./router";
 import {LoginForm} from "./pages/login_form/login_form";
 import {RegisterForm} from "./pages/registration_form/registeration_form";
-import './css/main.css';
-import './css/text.css';
-import './css/layout.css';
-import './css/components.css';
-import './css/forms.css';
-import './css/animations.css';
+import './css/all.css';
 
 export const router = new Router()
 router.registerRoute('/login/', LoginForm)
