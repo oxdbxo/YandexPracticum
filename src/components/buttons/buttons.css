@@ -1,26 +1,8 @@
-.text-input {
-  margin: 0;
-  border: 1px solid var(--color-secondary);
-  border-radius: 5px;
-  height: 2.5rem;
-  color: var(--color-dark);
-  font-size: 14px;
-  padding: 0 0 0 15px;
-  box-shadow: none;
-
-}
-
-.text-input:focus, .text-input:hover {
-  outline: none;
-  border-color: var(--color-primary)
-}
-
 .button {
   border: 0;
   border-radius: 5px;
   height: 2rem;
   box-shadow: none;
-  min-width: 250px;
   cursor: pointer;
   font-size: var(--button-font-size);
 }
@@ -50,15 +32,5 @@
 }
 
 .button-text:hover {
-  color: var(--color-primary);
-}
-
-
-.link {
-  color: var(--color-link);
-  cursor: pointer;
-}
-
-.link:hover {
   color: var(--color-primary);
 }

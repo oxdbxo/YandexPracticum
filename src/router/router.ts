@@ -1,10 +1,6 @@
-import {rootDivID} from "./constants";
-import {Page404} from "./pages/error_pages/404";
-import {Page5xx} from "./pages/error_pages/5xx";
-
-class Route {
+export class Route {
     path: string;
-    class: any;
+    class: any; //todo тип any, иначе проблемы с конструктором, с typeof Page не завелось. Используется только здесь.
 
     constructor(path: string, routeClass: any) {
         this.path = path;
@@ -14,15 +10,14 @@ class Route {
 
 export class Router {
     _root: HTMLElement|null;
-    _routes: Array<Route> = [
-        new Route('/404/', Page404),
-        new Route('/500/', Page5xx),
-    ]
-    _base: string;
+    _routes: Array<Route>;
 
-    constructor(base: string = '/') {
-        this._base = base;
-        this._root = document.getElementById(rootDivID);
+    constructor(rootDiv: string, routes: Array<Route> = []) {
+        this._routes = routes;
+        this._root = document.getElementById(rootDiv);
+        window.addEventListener('popstate', (event) => {
+            console.log(event)
+        }, false);
     }
 
     normalizePath(path: string) {
@@ -31,21 +26,6 @@ export class Router {
             _path += '/';
         }
         return _path;
-    }
-
-    registerRoute(path: string, routeClass: any) {
-        let _path = this.normalizePath(path)
-        const index = this._getRouteIndex(_path)
-        if (index === -1) {
-            this._routes.push(new Route(_path, routeClass))
-        }
-        else {
-            this._routes[index] = new Route(_path, routeClass)
-        }
-    }
-
-    _getRouteIndex(path: string) {
-        return this._routes.findIndex(item => item.path == path)
     }
 
     _getRoute(path: string) {
@@ -58,7 +38,7 @@ export class Router {
             if (this._root) {
                 const route = this._getRoute(_path)
                 if (route) {
-                    this.setPage(route)
+                    this.setPage(route, false)
                 } else {
                     this.setPage(this._getRoute('/404/'), false)
                 }
@@ -75,8 +55,9 @@ export class Router {
             if (this._root) {
                 this._root.replaceChildren(obj.div)
             }
-            if (setHistory && window.history)
+            if (setHistory && window.history) {
                 window.history.pushState([], '', route.path)
+            }
         }
     }
 }

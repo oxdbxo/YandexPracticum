@@ -1,8 +1,10 @@
-<div class="centered_form_div full-fill">
-    <div class="centered_form_title bold mb-2">
-        {{title}}
-    </div>
-    <div class="centered_form_body">
-        {{{body}}}
+<div class="centerd-form-wrapper flex-centered-all {{#if fade}}fade{{/if}}">
+    <div class="centered-form-block flex-centered-all {{#if bordered}}div-page{{/if}}">
+        <div class="centered_form_title bold mb-2 {{#if smallHeader}}small-header{{/if}}">
+            {{title}}
+        </div>
+        <div class=" w-100 flex-centered-all">
+            {{> @partial-block }}
+        </div>
     </div>
 </div>

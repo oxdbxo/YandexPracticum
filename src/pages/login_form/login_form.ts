@@ -1,18 +1,40 @@
-import {CenteredFormPage} from "../centered/centered.js";
+import LoginFormTemplate from './login_form.hbs?raw';
 import {router} from "../../app.js";
-import {loginTemplate} from "./login_form_tmpl.js";
-import Handlebars from "handlebars";
 import {searchElementByName} from "../../functions.js";
+import {Page} from "../Page";
+import {FIELD_NAMES} from "../../constants";
 
-export class LoginForm extends CenteredFormPage {
+export class LoginForm extends Page {
     _registerButton?: HTMLElement;
 
     constructor() {
-        const template = Handlebars.compile(loginTemplate);
-        //todo get user and password (current)
-        const html = template({user: 'pupkin', password: 'ivan'})
-        super('Вход', html)
-        this._registerButton = searchElementByName(this.div, 'register_b')
+        //TODO create all options
+        const options = {
+            login: {
+                name: FIELD_NAMES.login,
+                type: 'text',
+                value: 'vasya',
+                placeholder: 'Логин',
+            },
+            password: {
+                name: FIELD_NAMES.password,
+                type: 'password',
+                value: 'pupkins',
+                placeholder: 'Пароль',
+            },
+            login_button: {
+                name: FIELD_NAMES.login_button,
+                className: 'mt-1 button-active',
+                text: 'Войти',
+            },
+            registration_button: {
+                name: FIELD_NAMES.registration_button,
+                className: 'button-text',
+                text: 'Зарегистироваться',
+            },
+        }
+        super(LoginFormTemplate, options)
+        this._registerButton = searchElementByName(this.div, 'registration_button');
         this._registerButton?.addEventListener('click', () => router.navigate('/registration'))
     }
 }

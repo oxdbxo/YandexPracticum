@@ -11,13 +11,26 @@
 }
 
 .text-error {
-  color: var(--color-error)
+  color: var(--color-error) !important;
 }
 
 .text-grey {
   color: var(--color-grey) !important;
 }
 
+.text-grey2 {
+  color: var(--color-grey2) !important;
+}
+
 .text-italic {
   font-style: italic;
+}
+
+.link {
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--color-primary);
 }

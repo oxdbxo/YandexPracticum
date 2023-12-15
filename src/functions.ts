@@ -1,17 +1,7 @@
-export function searchElementByName(where: Element|undefined, name: string): HTMLElement | undefined {
-    if (where !== undefined) {
-        for (const child of where.children) {
-            if (child.getAttribute('name') === name) {
-                return child as HTMLElement;
-            } else {
-                for (const _child of child.children) {
-                    const ele: HTMLElement | undefined = searchElementByName(_child, name);
-                    if (ele) {
-                        return ele;
-                    }
-                }
-            }
-        }
-    }
-    return undefined;
+export function searchElementByName(root: HTMLElement, name: string): HTMLElement | undefined {
+    const ele = root.querySelector(`[name="${name}"]`);
+    if (ele instanceof HTMLElement) //преобразование т.к. querySelector возвращает Element | null
+        return ele;
+    else
+        return undefined;
 }

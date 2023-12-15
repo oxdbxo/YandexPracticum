@@ -1,14 +1,8 @@
-import {CenteredFormPage} from "../centered/centered";
+import {Page} from "../Page";
+import template from './404.hbs?raw';
 
-const template = `
-    <h2 class="font-error">Страница не найдена</h2>
-    <p class="mt-3 mb-1 bold font-grey">Но вы можете:</p>
-    <p class="mt-1 ml-2 link">Войти в чат</p>
-    <p class="mt-1 ml-2 link">Создать аккаунт</p>
-`;
-
-export class Page404 extends CenteredFormPage {
+export class Page404 extends Page {
     constructor() {
-        super('404', template)
+        super(template)
     }
 }

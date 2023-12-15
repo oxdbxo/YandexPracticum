@@ -1,0 +1,23 @@
+.avatar-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.avatar-image-container {
+  width: 80px;
+  height: 80px;
+  border: 0px #dddddd solid;
+  border-radius: 40px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 60px;
+  height: 60px;
+  fill: var(--color-grey-light)
+}

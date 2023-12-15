@@ -25,3 +25,17 @@
 .ml-2 {
   margin-left: 2vw !important;
 }
+
+.flex-centered-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-direction-column {
+  flex-direction: column !important;
+}
+
+.flex-align-left {
+  align-items: flex-start;
+}

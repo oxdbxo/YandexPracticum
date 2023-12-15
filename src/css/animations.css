@@ -1,5 +1,5 @@
 .fade {
-  animation: fading 1s forwards;
+  animation: fading 2s forwards;
 }
 
 @keyframes fading {
