@@ -1,7 +1,6 @@
-
+import Handlebars from "handlebars";
 import centeredTemplate from './centered.hbs?raw';
 import './centered.css';
-import Handlebars from "handlebars";
 
 export class CenteredFormPage {
     div?: HTMLDivElement = undefined;

@@ -32,7 +32,8 @@
     "postcss-nesting": "^12.0.1",
     "postcss-sorting": "^8.0.2",
     "typescript": "^5.3.3",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "vite-plugin-handlebars": "^1.6.0"
   },
   "engines": {
     "npm": ">=9.2.0",

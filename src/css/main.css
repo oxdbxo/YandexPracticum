@@ -10,8 +10,8 @@ html {
   height: 100dvh;
 }
 
-body {
-  --ff-common-font: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol;
+:root {
+  --ff-common-font: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol;
   --color-primary: #4E5FFF;
   --color-secondary: #548dd7;
   --color-grey: #777777;
@@ -20,15 +20,16 @@ body {
   --color-light: #FFFFFF;
   --color-dark: #222222;
   --button-font-size: 16px;
+}
+
+body {
   font-family: var(--ff-common-font);
   user-select: none;
   overflow: auto;
 }
 
 .app-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
 }
 
 .full-fill {
@@ -43,4 +44,3 @@ body {
 .relative {
   position: relative;
 }
-
