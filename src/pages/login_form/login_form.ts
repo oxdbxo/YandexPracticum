@@ -13,13 +13,13 @@ export class LoginForm extends Page {
             login: {
                 name: FIELD_NAMES.login,
                 type: 'text',
-                value: 'vasya',
+                value: '',
                 placeholder: 'Логин',
             },
             password: {
                 name: FIELD_NAMES.password,
                 type: 'password',
-                value: 'pupkins',
+                value: '',
                 placeholder: 'Пароль',
             },
             login_button: {

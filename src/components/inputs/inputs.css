@@ -17,3 +17,8 @@ input:hover {
   border-color: var(--color-primary);
   border-width: 1px;
 }
+
+/*input:focus + label,
+input:not(:placeholder-shown) + label {
+  transform: translateY(-100%) scale(0.75);
+}*/
