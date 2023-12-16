@@ -20,21 +20,18 @@
 
 html {
   overflow: hidden;
-  width: 100dvw;
-  height: 100dvh;
+  height: 100vh;
 }
 
 body {
   font-family: var(--ff-common-font);
   user-select: none;
-  overflow: auto;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
 }
 
-.app-wrapper {
-  padding: 10px;
-}
-
-.full-fill {
+.full-content {
   height: 100%;
   width: 100%;
 }
@@ -48,7 +45,11 @@ body {
 }
 
 .relative {
-  position: relative;
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
 }
 
 .hidden {

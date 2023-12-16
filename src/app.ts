@@ -1,13 +1,13 @@
 import Handlebars from "handlebars";
 import {Route, Router} from "./router";
-import {CenteredFormTemplate, LoginForm, RegistrationForm} from "./pages";
-import {ProfileForm} from './pages/profile_form/profile_form'
-import {Page404} from "./pages/error_pages/404";
-import {Page5xx} from "./pages/error_pages/5xx";
+import {CenteredFormTemplate, LoginForm, MainPage, RegistrationForm} from "./pages";
+import {ProfileForm} from './pages'
+import {Page404} from "./pages";
+import {Page5xx} from "./pages";
+import {ForTest} from "./pages/for_test/for_test";
 import {ROOT_DIV_ID} from "./constants";
 import * as components from './components';
 import './css/all.css';
-import {ForTest} from "./pages/for_test/for_test";
 
 //init handlebars
 Object.entries(components).forEach(([ name, component ]) => {
@@ -25,6 +25,7 @@ export const router = new Router(
         new Route('/login/', LoginForm),
         new Route('/registration/', RegistrationForm),
         new Route('/profile/', ProfileForm),
+        new Route('/main/', MainPage),
     ]
 )
 

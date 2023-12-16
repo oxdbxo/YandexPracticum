@@ -1,0 +1,16 @@
+.left-panel {
+  width: fit-content;
+  max-width: 300px;
+  min-width: 100px;
+  border-right: solid 3px var(--color-grey-light);
+  height: 100%;
+  padding-right: 5px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.left-panel-header {
+  padding-bottom: 0.5vh;
+  border-bottom: 2px solid var(--color-grey-light);
+  height: 60px;
+}

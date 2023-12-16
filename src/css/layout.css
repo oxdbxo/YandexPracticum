@@ -26,16 +26,28 @@
   margin-left: 2vw !important;
 }
 
-.flex-centered-all {
+.flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
 }
 
 .flex-direction-column {
   flex-direction: column !important;
 }
 
+.flex-centered-all {
+  align-items: center;
+  justify-content: center;
+}
+
 .flex-align-left {
   align-items: flex-start;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-all {
+  flex: 1 !important;
 }
