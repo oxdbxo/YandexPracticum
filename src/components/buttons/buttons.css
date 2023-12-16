@@ -34,3 +34,22 @@
 .button-text:hover {
   color: var(--color-primary);
 }
+
+.icon-button {
+  padding: 2px;
+  fill: var(--color-grey);
+}
+
+.icon-button:hover {
+  fill: var(--color-primary)
+}
+
+.icon-button-middle {
+  height: 30px;
+  width: 30px;
+}
+
+.icon-button-huge {
+  height: 80px;
+  width: 80px;
+}

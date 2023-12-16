@@ -1,4 +1,5 @@
 export const ROOT_DIV_ID = 'root';
+
 export const FIELD_NAMES = {
     login: 'login',
     password: 'password',
@@ -11,5 +12,4 @@ export const FIELD_NAMES = {
     save_button: 'save_button',
     login_button: 'login_button',
     registration_button: 'registration_button',
-
 }

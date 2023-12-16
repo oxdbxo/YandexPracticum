@@ -1,1 +1,2 @@
-export {default as SquareButton} from './square_button.hbs?raw';
+export {SquareButton} from "./square_button";
+export {IconButton} from "./icon_button";

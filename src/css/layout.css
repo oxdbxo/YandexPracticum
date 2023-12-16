@@ -1,3 +1,7 @@
+.components-padding {
+  padding: 5px;
+}
+
 .mt-1 {
   margin-top: 1vh !important;
 }
@@ -29,6 +33,7 @@
 .flex {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .flex-direction-column {
@@ -51,3 +56,4 @@
 .flex-all {
   flex: 1 !important;
 }
+

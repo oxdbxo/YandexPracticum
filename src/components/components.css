@@ -3,3 +3,14 @@
 @import './avatar/avatar.css';
 @import './left_panel/left_panel.css';
 @import './feeds/feeds.css';
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.main-page-component-header {
+  border-bottom: var(--divider-border);
+  flex-wrap: nowrap;
+  min-width: inherit;
+  max-width: inherit;
+}

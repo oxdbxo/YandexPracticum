@@ -1,23 +1,17 @@
 .avatar-div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-}
-
-.avatar-image-container {
-  width: 80px;
-  height: 80px;
-  border: 0px #dddddd solid;
-  border-radius: 40px;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  cursor: inherit;
 }
 
 .avatar-img {
-  width: 60px;
-  height: 60px;
-  fill: var(--color-grey-light)
+  fill: var(--color-grey-light);
+  cursor: inherit;
+}
+
+.avatar-text {
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  cursor: inherit;
+  color: var(--color-header);
 }

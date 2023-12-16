@@ -9,7 +9,10 @@
   --color-error: #CB0006;
   --color-light: #FFFFFF;
   --color-dark: #222222;
+  --color-warning: #F17300;
+  --color-header: #282ACB;
   --button-font-size: 16px;
+  --divider-border: solid 2px var(--color-grey-light);
 }
 
 * {

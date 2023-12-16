@@ -6,7 +6,7 @@ export class ProfileForm extends Page {
 
   constructor() {
     const options = {
-        avatar: {src: '/icons/avatar.svg', color: 'var(--color-grey-light)'},
+        avatar: {height: '80px', text: 'Щелкните, чтобы изменить ваш аватар', className: "pointer", iconClass: "icon-button-huge"},
         login: {name: FIELD_NAMES.login, placeholder: 'Логин'},
         password: {name: FIELD_NAMES.password, placeholder: 'Пароль'},
         password2: {name: FIELD_NAMES.password2, placeholder: 'Повторите пароль'},
