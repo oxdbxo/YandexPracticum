@@ -1,15 +1,6 @@
 //Заглушка для демонстрации.
 //Узеры не существуют в первом спринте
 
-const meData = {
-    login: 'pupkini',
-    password: 'pupkins_1234',
-    first_name: 'Иван',
-    second_name: 'Пукин',
-    email: 'ivan@pupkins.ru',
-    phone: '+79085432312',
-}
-
 export interface UserType {
     id ?: string,
     login ?: string,
@@ -18,13 +9,6 @@ export interface UserType {
     second_name ?: string,
     email ?: string,
     phone ?: string,
-}
-
-const anotData = {
-    first_name: 'Иван',
-    second_name: 'Пукин',
-    email: 'ivan@pupkins.ru',
-    phone: '+79085432312',
 }
 
 class User {
@@ -37,7 +21,53 @@ class User {
     }
 }
 
-const ME = new User(meData, true)
-const AnotherUser = new User(anotData, true)
+//фиктивные данные для тестов:
+const meData = {
+    login: 'pupkini',
+    password: 'pupkins_1234',
+    first_name: 'Иван',
+    second_name: 'Пукин',
+    email: 'ivan@pupkins.ru',
+    phone: '+79085432312',
+}
+const testData = [
+    {
+        first_name: 'Иван',
+        second_name: 'Пупкин',
+        email: 'ivan@pupkins.ru',
+        phone: '+79085432312',
+    },
+    {
+        first_name: 'ООО',
+        second_name: 'Рога и копыта',
+        email: 'rog-kop@roga.ru',
+        phone: '+79085432312',
+    },
+    {
+        first_name: 'Петр',
+        second_name: 'Петров',
+        email: 'ivan@pupkins.ru',
+        phone: '+79085432312',
+    },
+    {
+        first_name: 'Сидор',
+        second_name: 'Сидоров',
+        email: 'ivan@pupkins.ru',
+        phone: '+79085432312',
+    },
+    {
+        first_name: 'Иван',
+        second_name: 'Иванофф',
+        email: 'ivan@pupkins.ru',
+        phone: '+79085432312',
+    },
+]
+const testUsers:Array<User> = [];
 
-export {User, ME, AnotherUser}
+for(let user of testData) {
+    testUsers.push(new User(user, false))
+}
+
+const ME = new User(meData, true)
+
+export {User, ME, testUsers}

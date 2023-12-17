@@ -1,6 +1,14 @@
-<div class="flex main-page-component-header components-padding">
-    {{> Avatar text="Пупка Васин" className="pointer" iconClass="icon-button-middle"}}
+<div class="flex flex-align-left w-100 left-panel-header components-padding">
+    <div class="flex">
+        {{> Avatar this className="pointer" iconClass="icon-button-middle"}}
+    </div>
+    <div class="h-100 flex header-text">
+        {{user.first_name}} {{user.second_name}}
+    </div>
+    <div class="flex-all"></div>
+    <div>
     {{#> IconButton className="icon-button-middle color-primary" }}
         {{> SVGMore}}
     {{/IconButton}}
+    </div>
 </div>

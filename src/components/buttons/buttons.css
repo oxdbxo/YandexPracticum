@@ -35,6 +35,11 @@
   color: var(--color-primary);
 }
 
+.icon {
+  margin: 4px;
+  fill: var(--color-grey-light);
+}
+
 .icon-button {
   padding: 2px;
   fill: var(--color-grey);
@@ -44,9 +49,14 @@
   fill: var(--color-primary)
 }
 
+.icon-button-small {
+  height: 20px;
+  width: 20px;
+}
+
 .icon-button-middle {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
 .icon-button-huge {

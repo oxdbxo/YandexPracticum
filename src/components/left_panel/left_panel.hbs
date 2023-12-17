@@ -1,5 +1,6 @@
-<div class="flex flex-direction-column left-panel h-100">
-    {{> LeftPanelHeader}}
-    {{> ChatList }}
+<div class="flex flex-scroll-container-vertical left-panel">
+    {{> LeftPanelHeader user=User}}
+    {{> ChatSearchForm }}
+    {{> ChatList list=ChatsList}}
     {{> LeftPanelFooter }}
 </div>

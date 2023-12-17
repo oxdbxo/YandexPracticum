@@ -3,14 +3,12 @@
 @import './avatar/avatar.css';
 @import './left_panel/left_panel.css';
 @import './feeds/feeds.css';
+@import "./text_chip/text_chip.css";
+
+:root {
+ --chip-background-color: #404fff;
+}
 
 .pointer {
   cursor: pointer !important;
-}
-
-.main-page-component-header {
-  border-bottom: var(--divider-border);
-  flex-wrap: nowrap;
-  min-width: inherit;
-  max-width: inherit;
 }

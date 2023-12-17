@@ -10,9 +10,12 @@
   --color-light: #FFFFFF;
   --color-dark: #222222;
   --color-warning: #F17300;
-  --color-header: #282ACB;
+  --color-header: #00018c;
+  --color-selected: #C6ECFC;
   --button-font-size: 16px;
   --divider-border: solid 2px var(--color-grey-light);
+  --divider-border-thin: solid 1px var(--color-grey-light);
+  --input-height: 30px;
 }
 
 * {

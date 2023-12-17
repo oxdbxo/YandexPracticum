@@ -1,3 +1,5 @@
-<div class="flex flex-direction-column flex-all w-100 components-padding">
-    Список чатей
+<div class="w-100 chat_list">
+        {{#each list}}
+            {{> ChatLine this }}
+        {{/each}}
 </div>

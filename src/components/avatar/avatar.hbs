@@ -1,14 +1,9 @@
 <div class="flex w-100 avatar-div {{className}}">
     <div class="{{iconClass}}">
-        {{#if svg }}
-            {{svg}}
+        {{#if icon }}
+            {{icon}}
         {{else}}
             {{> SVGAvatarEmpty }}
         {{/if}}
     </div>
-    {{#if text}}
-        <p class="avatar-text">
-            {{text}}
-        </p>
-    {{/if}}
 </div>

@@ -1,0 +1,19 @@
+<div class="flex chat-line w-100">
+    <div class="flex-0 relative">
+        {{> Avatar iconClass="chat-line-avatar"}}
+        {{#if chipText }}
+            {{> TextChip text=user.data.first_name}}
+        {{/if}}
+    </div>
+    <div class="flex flex-direction-column flex-align-left chat-line-body flex-all chat-line-body">
+        <div>
+            <span class="chat-line-name">{{user.data.first_name}} {{user.data.second_name}}</span>
+        </div>
+        <div class="chat-line-date">
+            {{last_message.Date}}
+        </div>
+        <div class="chat-line-message">
+            {{last_message.Message}}
+        </div>
+    </div>
+</div>

@@ -1,10 +1,21 @@
 @import './footer/footer.css';
+@import './chat_list/chat_list.css';
 
 .left-panel {
-  max-width: 300px;
-  min-width: 100px;
   border-right: var(--divider-border);
-  height: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
+}
+
+.left-panel-header {
+  flex-wrap: nowrap;
+  min-width: inherit;
+  max-width: inherit;
+}
+
+.header-text {
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  cursor: inherit;
+  color: var(--color-header);
 }

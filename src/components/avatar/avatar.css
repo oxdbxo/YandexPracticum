@@ -7,11 +7,3 @@
   cursor: inherit;
 }
 
-.avatar-text {
-  font-weight: 600;
-  padding-left: 10px;
-  padding-right: 10px;
-  white-space: nowrap;
-  cursor: inherit;
-  color: var(--color-header);
-}
