@@ -1,3 +1,59 @@
-.feeds {
+.feed-wrapper {
+  justify-content: center;
+  height: 100%;
+  max-height: 100%;
+  flex: 10;
+  background-image: url("/public/baackground2.jpg");
+  background-repeat: repeat;
+}
 
+.feeds-footer {
+  flex: 0;
+  border-top: 1px solid var(--color-grey-light);
+}
+
+.feeds-header {
+  flex: 0;
+  border-bottom: 1px solid var(--color-grey-light);
+}
+
+.feeds-body {
+  max-width: 70px;
+  min-width: 50%;
+  width: 100%;
+}
+
+@media (max-width: 1600px) {
+  .feeds-body {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .feeds-body {
+    max-width: 100%;
+  }
+}
+
+.feed-list {
+  flex: 2;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 80%;
+  width: 100%;
+}
+
+.message {
+  max-width: 60%;
+  min-width: 100px;
+  border: 1px solid var(--color-grey-light);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  user-select: text;
+  background-color: #d6f3d9;
+}
+
+.message-me {
+  background-color: #cbe4fd;
 }

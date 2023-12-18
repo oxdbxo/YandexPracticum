@@ -1,23 +1,24 @@
 //Все данные вымышленные, все совпадения идут лесом
 //Чаты не существуют в первом спринте
 
-import {testUsers, User} from "../users/user";
+import {ME, testUsers, User} from "../users/user";
 
 class Chat {
-    user ?: User;
+    chatInfo ?: User;
     feeds ?: Array<any>;
     last_message ?: any;
-    constructor(user: User, feeds: Array<any>) {
-        this.user = user;
+    constructor(chatInfo: User, feeds: Array<any>) {
+        this.chatInfo = chatInfo;
         this.feeds = feeds;
-        const lastM = feeds[feeds.length-1].Messages;
-        this.last_message = lastM[lastM.length-1]
+        this.last_message = feeds[feeds.length-1]
     }
 }
 
 function randomDate(start: Date, end: Date): Date {
     return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 }
+const startDate = new Date(1810, 0, 1)
+const endDate = new Date(2022, 12, 31)
 
 function makeString(length:number) {
     let result = '';
@@ -32,15 +33,10 @@ function makeString(length:number) {
 
 const testChats: Array<Chat> = []
 let chatsCount = 5;
-const startDate = new Date(1810, 0, 1)
-const endDate = new Date(2023, 12, 31)
 
 while(chatsCount > 0) {
-    const feeds = []
-    let feedsCount = Math.random()*5;
-    while(feedsCount > 0) {
-        const messages = []
-        let mesCounts = Math.random()*30;
+        const feeds = []
+        let mesCounts = Math.random()*20+15;
         while(mesCounts > 0) {
             let sentense = ''
             let worldCount = Math.random()*20;
@@ -48,14 +44,13 @@ while(chatsCount > 0) {
                 sentense += makeString(Math.floor(Math.random()*11)) + ' ';
                 worldCount--;
             }
-            messages.push({Date: '04 8562', Message: sentense})
+            const isMe = Math.random() > 0.5;
+            const date = randomDate(startDate, endDate)
+            let dateString = `${date.toLocaleDateString('ru')} ${date.toLocaleTimeString('ru')}`
+            dateString =dateString.substring(0, dateString.length-3);
+            feeds.push({Date: dateString, User: isMe?testUsers[3]:ME, Message: sentense})
             mesCounts--;
         }
-        const feed = {Date: randomDate(startDate, endDate), Messages: messages}
-        feeds.push(feed)
-
-        feedsCount--;
-    }
     testChats.push(new Chat(testUsers[chatsCount-1], feeds))
     chatsCount--;
 }

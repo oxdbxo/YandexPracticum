@@ -1,1 +1,1 @@
-export {default as LeftPanelFooter} from './left_panel_footer.hbs?raw';
+export {default as LeftPanelFooter} from './footer.hbs?raw';

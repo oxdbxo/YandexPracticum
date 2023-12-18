@@ -1,4 +1,3 @@
-@import './footer/footer.css';
 @import './chat_list/chat_list.css';
 
 .left-panel {
@@ -18,4 +17,16 @@
   white-space: nowrap;
   cursor: inherit;
   color: var(--color-header);
+}
+
+.left-panel-footer {
+  border-top: var(--divider-border);
+  font-size: 80%;
+}
+
+.chat_list {
+  flex: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-width: 300px;
 }

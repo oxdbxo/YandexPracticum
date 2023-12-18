@@ -57,6 +57,14 @@
   align-items: flex-start;
 }
 
+.flex-justify-right {
+  justify-content: right;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -72,9 +80,15 @@
 .flex-scroll-container-vertical {
   overflow: hidden;
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
+  left: 0;
   flex-flow: row wrap;
   flex-direction: column;
+  height: 100%;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }

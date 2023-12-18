@@ -1,8 +1,2 @@
 @import './chat_line/chat_line.css';
 
-.chat_list {
-  flex: 10;
-  overflow-y: auto;
-  overflow-x: hidden;
-  min-width: 300px;
-}

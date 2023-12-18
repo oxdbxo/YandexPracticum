@@ -1,7 +1,7 @@
 import {Page} from "../Page.js";
 import template from './profile_form.hbs?raw';
 import {FIELD_NAMES} from "../../constants";
-import {ME} from "../../users/user";
+import {ME} from "../../tests";
 
 export class ProfileForm extends Page {
 

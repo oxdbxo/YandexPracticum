@@ -1,0 +1,13 @@
+<div class="flex {{#if this.User.itsMe}}flex-justify-right{{/if}}">
+    <div class="message {{#if this.User.itsMe}}message-me{{/if}}">
+        <div class="flex flex-align-left">
+            <div class="flex bold pr-1 mb-1 flex-all">
+                {{this.User.data.first_name}} {{this.User.data.second_name}}
+            </div>
+            <div class="text-italic">
+                {{ this.Date }}
+            </div>
+        </div>
+        {{ this.Message }}
+    </div>
+</div>
