@@ -28,6 +28,7 @@
   font-size: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
+  color: var(--color-secondary);
 }
 
 .chat-line-message {

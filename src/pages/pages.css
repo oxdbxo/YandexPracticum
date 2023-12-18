@@ -1,3 +1,7 @@
+.centered-form {
+  background-color: white;
+}
+
 .centered-form-block {
   flex-direction: column;
   padding: 2vh 2vw 2vh;

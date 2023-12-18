@@ -1,4 +1,5 @@
 import handlebars from 'vite-plugin-handlebars';
+import stylelint from 'vite-plugin-stylelint';
 
 export default {
   server: {
@@ -7,5 +8,5 @@ export default {
   build: {
     outDir: 'dist',
   },
-  plugins: [handlebars()],
+  plugins: [handlebars(), stylelint()],
 }

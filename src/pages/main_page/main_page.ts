@@ -11,7 +11,7 @@ export class MainPage extends Page {
             Feeds: testChats[3].feeds,
             ChatInfo: testUsers[3].data,
         }
-        console.log(options)
         super(template, options);
+        //this.div.classList.add('backgound')
     }
 }
