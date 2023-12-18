@@ -1,14 +1,14 @@
 :root {
-  --ff-common-font: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol;
-  --color-primary: #003cff;
+  --ff-common-font: blinkmacsystemfont, -apple-system, segoe ui, roboto, oxygen-sans, ubuntu, cantarell, helvetica neue, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", segoe ui symbol;
+  --color-primary: #003CFF;
   --color-secondary: #3a7ed5;
-  --color-grey: #777777;
-  --color-grey2: #555555;
-  --color-grey-light: #DDDDDD;
+  --color-grey: #777;
+  --color-grey2: #555;
+  --color-grey-light: #DDD;
   --color-link: #1C1CE3;
   --color-error: #CB0006;
-  --color-light: #FFFFFF;
-  --color-dark: #222222;
+  --color-light: #FFF;
+  --color-dark: #222;
   --color-warning: #F17300;
   --color-header: #00018c;
   --color-selected: #C6ECFC;

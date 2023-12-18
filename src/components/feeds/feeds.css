@@ -21,13 +21,13 @@
   width: 100%;
 }
 
-@media (max-width: 1600px) {
+@media (width <= 1600px) {
   .feeds-body {
     max-width: 70%;
   }
 }
 
-@media (max-width: 1024px) {
+@media (width < 1024px) {
   .feeds-body {
     max-width: 100%;
   }
@@ -36,7 +36,6 @@
 .feed-list {
   flex: 2;
   overflow-y: auto;
-  overflow-x: hidden;
   font-size: 80%;
   width: 100%;
 }

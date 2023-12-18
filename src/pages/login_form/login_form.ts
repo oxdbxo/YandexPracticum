@@ -8,7 +8,6 @@ export class LoginForm extends Page {
     _registerButton?: HTMLElement;
 
     constructor() {
-        //TODO create all options
         const options = {
             login: {
                 name: FIELD_NAMES.login,

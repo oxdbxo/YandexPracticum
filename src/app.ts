@@ -30,5 +30,4 @@ export const router = new Router(
 )
 
 //go to current page
-//todo check for user here and go to login page if all is sucks
 router.navigate(window.location.pathname)

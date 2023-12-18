@@ -1,6 +1,6 @@
 export class Route {
     path: string;
-    class: any; //todo тип any, иначе проблемы с конструктором, с typeof Page не завелось. Используется только здесь.
+    class: any; //тип any, иначе проблемы с конструктором, с typeof Page не завелось. Используется только здесь.
 
     constructor(path: string, routeClass: any) {
         this.path = path;
