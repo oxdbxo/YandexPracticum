@@ -5,13 +5,15 @@ import {ME} from "../../tests/";
 
 export class MainPage extends Page {
     constructor() {
+        const cn = 3;
         const options = {
             ChatsList: testChats,
             User: ME.data,
-            Feeds: testChats[3].feeds,
-            ChatInfo: testUsers[3].data,
+            Feeds: testChats[cn].feeds,
+            ChatInfo:testUsers[cn].data,
         }
+        testChats[cn].selected = true;
+        console.log(options)
         super(template, options);
-        //this.div.classList.add('backgound')
     }
 }

@@ -1,11 +1,17 @@
-.centered-form {
-  background-color: white;
+.centered-dialog-background {
+  background-color: var(--color-dialog-background);
+}
+
+.centerd-dialog-bordered {
+  border: 1px solid var(--color-grey2);
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px var(--color-grey);
 }
 
 .centered-form-block {
-  flex-direction: column;
   padding: 2vh 2vw;
   min-width: 25%;
+  background-color: white;
 }
 
 .centered-form-title {

@@ -16,6 +16,7 @@
   --divider-border: solid 2px var(--color-grey-light);
   --divider-border-thin: solid 1px var(--color-grey-light);
   --input-height: 30px;
+  --color-dialog-background: #A2A2A255;
 }
 
 * {
@@ -35,6 +36,10 @@ body {
   width: 100vw;
   height: 100%;
   overflow: hidden;
+}
+
+.nodisplay {
+  display: none;
 }
 
 .full-content {

@@ -1,4 +1,4 @@
-export {CenteredFormTemplate} from './centered';
+export {CenteredFormTemplate} from '../components/centered_window';
 export * from './main_page';
 export * from './error_pages';
 export * from './login_form';

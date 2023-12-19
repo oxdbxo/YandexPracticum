@@ -1,8 +1,8 @@
-<div class="flex chat-line w-100">
+<div class="flex chat-line w-100 {{#if selected}}chat-line-selected{{/if}}">
     <div class="flex-0 relative">
         {{> Avatar iconClass="chat-line-avatar"}}
-        {{#if chipText }}
-            {{> TextChip text=user.data.first_name}}
+        {{#if unreaded }}
+            {{> TextChip text=unreaded}}
         {{/if}}
     </div>
     <div class="flex flex-direction-column flex-align-left chat-line-body flex-all chat-line-body">

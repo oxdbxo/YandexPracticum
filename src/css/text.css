@@ -30,6 +30,7 @@
 .link {
   color: var(--color-secondary);
   cursor: pointer;
+  padding-bottom: 5px;
 }
 
 .link:hover {

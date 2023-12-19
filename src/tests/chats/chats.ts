@@ -7,10 +7,15 @@ class Chat {
     chatInfo ?: User;
     feeds ?: Array<any>;
     last_message ?: any;
+    unreaded?: number;
+    selected ?: boolean;
     constructor(chatInfo: User, feeds: Array<any>) {
         this.chatInfo = chatInfo;
         this.feeds = feeds;
         this.last_message = feeds[feeds.length-1]
+        this.unreaded = Math.floor(Math.random()*8)
+        if (this.unreaded < 4)
+            this.unreaded = undefined;
     }
 }
 
@@ -47,11 +52,11 @@ while(chatsCount > 0) {
             const isMe = Math.random() > 0.5;
             const date = randomDate(startDate, endDate)
             let dateString = `${date.toLocaleDateString('ru')} ${date.toLocaleTimeString('ru')}`
-            dateString =dateString.substring(0, dateString.length-3);
-            feeds.push({Date: dateString, User: isMe?testUsers[3]:ME, Message: sentense})
+            dateString = dateString.substring(0, dateString.length-3);
+            feeds.push({Date: dateString, User: isMe?testUsers[5-chatsCount]:ME, Message: sentense})
             mesCounts--;
         }
-    testChats.push(new Chat(testUsers[chatsCount-1], feeds))
+    testChats.push(new Chat(testUsers[5-chatsCount], feeds))
     chatsCount--;
 }
 

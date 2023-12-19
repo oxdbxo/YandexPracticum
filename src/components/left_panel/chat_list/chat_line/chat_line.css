@@ -4,6 +4,10 @@
   flex-wrap: nowrap;
 }
 
+.chat-line-selected {
+  background-color: var(--color-selected);
+}
+
 .chat-line:hover {
   background-color: var(--color-selected);
 }

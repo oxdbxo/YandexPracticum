@@ -23,17 +23,23 @@ class User {
 
 //фиктивные данные для тестов:
 const meData = {
-    login: 'pupkini',
-    password: 'pupkins_1234',
-    first_name: 'Иван',
-    second_name: 'Пукин',
-    email: 'ivan@pupkins.ru',
+    login: 'serg123',
+    password: '123456',
+    first_name: 'Сергей',
+    second_name: 'Константинов',
+    email: 'my@pochta.hru',
     phone: '+79085432312',
 }
 const testData = [
     {
         first_name: 'Иван',
-        second_name: 'Пупкин',
+        second_name: 'Иванофф',
+        email: 'ivan@pupkins.ru',
+        phone: '+79085432312',
+    },
+    {
+        first_name: 'Сидор',
+        second_name: 'Сидоров',
         email: 'ivan@pupkins.ru',
         phone: '+79085432312',
     },
@@ -50,18 +56,13 @@ const testData = [
         phone: '+79085432312',
     },
     {
-        first_name: 'Сидор',
-        second_name: 'Сидоров',
-        email: 'ivan@pupkins.ru',
-        phone: '+79085432312',
-    },
-    {
-        first_name: 'Иван',
-        second_name: 'Иванофф',
+        first_name: 'Гадя Петрович',
+        second_name: 'Хренова',
         email: 'ivan@pupkins.ru',
         phone: '+79085432312',
     },
 ]
+
 const testUsers:Array<User> = [];
 
 for(let user of testData) {

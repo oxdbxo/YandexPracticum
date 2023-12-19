@@ -1,4 +1,4 @@
-export const ROOT_DIV_ID = 'root';
+export const ROOT_DIV_ID = 'page';
 
 export const FIELD_NAMES = {
     login: 'login',
