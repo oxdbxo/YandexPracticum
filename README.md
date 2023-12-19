@@ -1,15 +1,17 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/943a78b4-83d5-4033-bfe6-ec0365fb6f22/deploy-status)](https://app.netlify.com/sites/konstantinov-yp/deploys)
 
 # Описание
-[Макеты проекта чата для Яндекс Практикума.](https://www.figma.com/file/Joz5uIH7Kuy94ekFFz2mXB/Untitled?type=design&node-id=0%3A1&mode=design&t=WOHlZweZ33mMwdcd-1) Спринт №1.
+Спринт №1.
+
+[Прототипы проекта чата для Яндекс Практикума в Фигме.](https://www.figma.com/file/Joz5uIH7Kuy94ekFFz2mXB/Untitled?type=design&node-id=0%3A1&mode=design&t=WOHlZweZ33mMwdcd-1)
 
 Проект создан на базе npm.
 
 ### Запуск:
 
-npm install
+**npm install**
 
-npm run start
+**npm run start**
 
 зайти на страницу http://localhost:3000/
 
@@ -36,4 +38,4 @@ npm run start
 Порт сервера: 5173
 
 ### Дополнительно
-Сборка проекта в папку /dist: ***npm run prod***
+Сборка проекта в папку /dist: **npm run prod**
