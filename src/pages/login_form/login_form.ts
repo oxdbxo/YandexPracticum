@@ -1,11 +1,8 @@
 import LoginFormTemplate from './login_form.hbs?raw';
-import {router} from "../../app.js";
-import {searchElementByName} from "../../functions.js";
 import {Page} from "../Page";
 import {FIELD_NAMES} from "../../constants";
 
 export class LoginForm extends Page {
-    private registerButton?: HTMLElement;
 
     constructor() {
         const options = {
@@ -37,7 +34,5 @@ export class LoginForm extends Page {
             },
         }
         super(LoginFormTemplate, options)
-        this.registerButton = searchElementByName(this.div, FIELD_NAMES.registration_button);
-        this.registerButton?.addEventListener('click', () => router.navigate('/registration'))
     }
 }

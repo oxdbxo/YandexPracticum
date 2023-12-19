@@ -1,6 +1,4 @@
 import registerTemplate from "./registration_form.hbs?raw";
-import {searchElementByName} from "../../functions";
-import {router} from "../../app";
 import {Page} from "../Page";
 import {FIELD_NAMES} from "../../constants";
 
@@ -20,7 +18,5 @@ export class RegistrationForm extends Page {
             login_button: {name: FIELD_NAMES.login_button, className: 'button-text', text: 'Форма входа'},
         }
         super(registerTemplate, options)
-        this._loginButton = searchElementByName(this.div, 'login_button')
-        this._loginButton?.addEventListener('click', () => router.navigate('/login/'))
     }
 }
