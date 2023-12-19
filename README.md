@@ -1,19 +1,39 @@
-# Макеты
-[Макеты лежат в Фигме](https://www.figma.com/file/Joz5uIH7Kuy94ekFFz2mXB/Untitled?type=design&node-id=0%3A1&mode=design&t=WOHlZweZ33mMwdcd-1)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/943a78b4-83d5-4033-bfe6-ec0365fb6f22/deploy-status)](https://app.netlify.com/sites/konstantinov-yp/deploys)
 
 # Описание
-Проект на базе npm.
+[Макеты проекта чата для Яндекс Практикума.](https://www.figma.com/file/Joz5uIH7Kuy94ekFFz2mXB/Untitled?type=design&node-id=0%3A1&mode=design&t=WOHlZweZ33mMwdcd-1) Спринт №1.
 
-Используются postCSS и handlebars.
+Проект создан на базе npm.
 
-Все исходники лежат в /src
+### Запуск:
 
-### Дев сервер 
-Используется vite.
+npm install
 
+npm run start
+
+зайти на страницу http://localhost:3000/
+
+На странице тыкнуть в интересующую ссылку.
+
+---
+
+Список ссылок для прямого доступа:
+- Страница тестирования: http://localhost:3000
+- Форма входа (логина): http://localhost:3000/login
+- Форма регистрации: http://localhost:3000/registration
+- Форма профиля: http://localhost:3000/profile
+- Главная (страница с чатами): http://localhost:3000/main
+- Страница 404: http://localhost:3000/404
+- Страница 5xx: http://localhost:3000/5xx
+
+---
+
+Проект задеплоен на [Netlify](https://konstantinov-yp.netlify.app/) 
+
+### Дев сервер
 Комманда для запуска: **npm run dev**
 
-### Продакшен сервер
-Используется express для отдачи файлов. Для сбоки: vite. 
+Порт сервера: 5173
 
-Запуск: **npm run start**
+### Дополнительно
+Сборка проекта в папку /dist: ***npm run prod***
