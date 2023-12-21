@@ -7,7 +7,7 @@ import {Page5xx} from "./pages";
 import {ROOT_DIV_ID} from "./constants";
 import * as components from './components';
 import './css/all.css';
-import {ForTest} from "./tests/test_page/test";
+import {TestPage} from "./tests";
 
 //init handlebars
 Object.entries(components).forEach(([ name, component ]) => {
@@ -19,7 +19,7 @@ Handlebars.registerPartial('CenterdFormPage', CenteredFormTemplate)
 export const router = new Router(
     ROOT_DIV_ID,
     [
-        new Route('/', ForTest),
+        new Route('/', TestPage),
         new Route('/404/', Page404),
         new Route('/5xx/', Page5xx),
         new Route('/login/', LoginForm),

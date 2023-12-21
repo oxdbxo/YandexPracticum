@@ -1,3 +1,5 @@
+//Страница формы входа
+
 import LoginFormTemplate from './login_form.hbs?raw';
 import {Page} from "../Page";
 import {FIELD_NAMES} from "../../constants";

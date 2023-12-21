@@ -4,7 +4,7 @@ import {openNewWindow} from "../../functions";
 import {CreateChatDialog, UploadFileDialog} from "../../components/dialogs";
 import {Dialog} from "../../components/dialogs/dialog";
 
-export class ForTest extends Page {
+export class TestPage extends Page {
 
     showDialog(event: Event) {
         const target = event.target as HTMLElement;

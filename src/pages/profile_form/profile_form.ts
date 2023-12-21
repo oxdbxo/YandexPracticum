@@ -1,3 +1,5 @@
+//Страница формы профиля
+
 import {Page} from "../Page.js";
 import template from './profile_form.hbs?raw';
 import {FIELD_NAMES} from "../../constants";
@@ -7,7 +9,7 @@ export class ProfileForm extends Page {
 
   constructor() {
     const options = {
-        avatar: {name: FIELD_NAMES.avatar, height: '80px', text: 'Щелкните, чтобы изменить ваш аватар', className: "pointer", iconClass: "icon-button-huge"},
+        avatar: {name: FIELD_NAMES.avatar, height: '80px', className: "pointer", iconClass: "icon-button-huge"},
         login: {name: FIELD_NAMES.login, placeholder: 'Логин', value: ME.data?.login},
         oldPassword: {name: FIELD_NAMES.password2, type: 'password', placeholder: 'Старый пароль', value: ''},
         password: {name: FIELD_NAMES.password, type: 'password', placeholder: 'Новый пароль', value: ''},

@@ -2,6 +2,7 @@ import {Dialog} from "../dialog";
 import {default as CreateChatDialogTemplate} from './create_chat.hbs?raw';
 import Handlebars from "handlebars";
 
+//Диалог создания чата
 export class CreateChatDialog extends Dialog {
   loadButton ?: HTMLElement|null;
   callback ?: Function;
@@ -17,7 +18,9 @@ export class CreateChatDialog extends Dialog {
     if (div) {
       this.loadButton = div.querySelector("[name='add-chat-button']")
       if (this.loadButton) {
-        this.loadButton.addEventListener('click',() => {
+        this.loadButton.addEventListener('click',(event) => {
+          event.preventDefault()
+          event.stopImmediatePropagation()
           if (this.callback)
             this.callback(this)
         })

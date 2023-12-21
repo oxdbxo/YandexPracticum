@@ -1,3 +1,5 @@
+//Страница формы регистрации
+
 import registerTemplate from "./registration_form.hbs?raw";
 import {Page} from "../Page";
 import {FIELD_NAMES} from "../../constants";

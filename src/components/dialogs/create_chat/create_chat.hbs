@@ -1,7 +1,7 @@
-<div>
-    {{> InputText placeholder="Логин пользователя"}}
+<form name="create-chat-dialog" onsubmit="return false;">
+    {{> InputText placeholder="Логин пользователя" name="login"}}
     <div id="error" class="div-error"></div>
     <div class="mt-2">
         {{> SquareButton text="Создать" className="button button-active" name="add-chat-button"}}
     </div>
-</div>
+</form>
