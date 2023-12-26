@@ -1,0 +1,16 @@
+{{#> CenterdFormPage title="Профиль" fade=true bordered=true smallHeader=true}}
+    <form name="profile-form" class="form-div" onsubmit="return false;">
+        <button class="flex flex-justify-center flat-button" name="avatar">
+            {{> Avatar avatar }}
+        </button>
+        {{> InputText login }}
+        {{> InputText first_name }}
+        {{> InputText second_name }}
+        {{> InputText email }}
+        {{> InputText phone }}
+        <div class="divider-h"></div>
+        {{> InputText oldPassword }}
+        {{> InputText password }}
+        {{> SquareButton save_button }}
+    </form>
+{{/CenterdFormPage}}

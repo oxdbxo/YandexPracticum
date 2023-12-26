@@ -1,0 +1,15 @@
+@import './inputs/inputs.css';
+@import './buttons/buttons.css';
+@import './avatar/avatar.css';
+@import './left_panel/left_panel.css';
+@import './feeds/feeds.css';
+@import "./text_chip/text_chip.css";
+@import './dialogs/dialog.css';
+
+:root {
+ --chip-background-color: #404fff;
+}
+
+.pointer {
+  cursor: pointer !important;
+}

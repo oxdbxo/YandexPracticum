@@ -1,0 +1,25 @@
+.centered-dialog-background {
+  background-color: var(--color-dialog-background);
+}
+
+.centerd-dialog-bordered {
+  border: 1px solid var(--color-grey2);
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px var(--color-grey);
+}
+
+.centered-form-block {
+  padding: 2vh 2vw;
+  min-width: 25%;
+  background-color: white;
+}
+
+.centered-form-title {
+  font-size: 3rem;
+  color: var(--color-primary);
+  text-shadow: 1px 1px 2px red;
+}
+
+.small-header {
+  font-size: 2.3rem !important;
+}

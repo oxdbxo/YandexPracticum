@@ -1,0 +1,99 @@
+.components-padding {
+  padding: 5px;
+}
+
+.divider-h {
+  width: 100%;
+  border-top: 1px solid var(--color-grey-light);
+}
+
+.mt-1 {
+  margin-top: 1vh !important;
+}
+
+.mt-2 {
+  margin-top: 2vh !important;
+}
+
+.mt-3 {
+  margin-top: 3vh !important;
+}
+
+.mb-1 {
+  margin-bottom: 1vh !important;
+}
+
+.mb-2 {
+  margin-bottom: 2vh !important;
+}
+
+.ml-1 {
+  margin-left: 1vw !important;
+}
+
+.ml-2 {
+  margin-left: 2vw !important;
+}
+
+.pl-1 {
+  padding-left: 1vw;;
+}
+
+.pr-1 {
+  padding-right: 1vw;;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-direction-column {
+  flex-direction: column !important;
+}
+
+.flex-centered-all {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-align-left {
+  align-items: flex-start;
+}
+
+.flex-justify-right {
+  justify-content: right;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-0 {
+  flex: 0 !important;
+}
+
+.flex-all {
+  flex: 1 !important;
+}
+
+.flex-scroll-container-vertical {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  flex-flow: row wrap;
+  flex-direction: column;
+  height: 100%;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}

@@ -1,0 +1,7 @@
+.form-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 100%;
+  position: relative;
+}

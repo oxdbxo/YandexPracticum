@@ -1,0 +1,19 @@
+<div class="flex chat-line w-100 {{#if selected}}chat-line-selected{{/if}}">
+    <div class="flex-0 relative">
+        {{> Avatar iconClass="chat-line-avatar"}}
+        {{#if unreaded }}
+            {{> TextChip text=unreaded}}
+        {{/if}}
+    </div>
+    <div class="flex flex-direction-column flex-align-left chat-line-body flex-all chat-line-body">
+        <div>
+            <span class="chat-line-name">{{chatInfo.data.first_name}} {{chatInfo.data.second_name}}</span>
+        </div>
+        <div class="chat-line-date">
+            {{last_message.Date}}
+        </div>
+        <div class="chat-line-message">
+            {{last_message.Message}}
+        </div>
+    </div>
+</div>

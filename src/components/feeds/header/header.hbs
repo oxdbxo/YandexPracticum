@@ -1,0 +1,9 @@
+<div class="flex components-padding mb-2 w-100 feeds-header">
+    <div>
+        {{> Avatar iconClass="icon-button-middle"}}
+    </div>
+    <div class="flex-all ml-1">{{ChatInfo.first_name}} {{ChatInfo.second_name}}</div>
+    {{#> IconButton className="icon-button-middle" }}
+        {{> SVGMore}}
+    {{/IconButton}}
+</div>

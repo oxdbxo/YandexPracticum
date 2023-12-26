@@ -1,0 +1,13 @@
+{{#> CenterdFormPage title="Регистрация" fade=true bordered=true smallHeader=true}}
+    <form name="registration_form" class="form-div" onsubmit="return false;">
+        {{> InputText login }}
+        {{> InputText password }}
+        {{> InputText password2 }}
+        {{> InputText first_name }}
+        {{> InputText second_name }}
+        {{> InputText email }}
+        {{> InputText phone }}
+        {{> SquareButton registration_button }}
+        {{> SquareButton login_button }}
+    </form>
+{{/CenterdFormPage}}

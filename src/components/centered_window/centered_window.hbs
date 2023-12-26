@@ -1,0 +1,10 @@
+<div class="flex flex-centered-all full-content {{#if dialog}}centered-dialog-background{{/if}}">
+    <div class="centered-form-block {{#if fade}}fade{{/if}} {{#if bordered}}centerd-dialog-bordered{{/if}}">
+        <h1 class="flex flex-centered-all bold mb-2 centered-form-title {{#if smallHeader}}small-header{{/if}}">
+            {{title}}
+        </h1>
+        <div class="w-100 flex-centered-all">
+            {{> @partial-block }}
+        </div>
+    </div>
+</div>

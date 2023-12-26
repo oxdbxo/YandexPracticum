@@ -1,0 +1,76 @@
+.button {
+  border: 0;
+  border-radius: 5px;
+  height: 2rem;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: var(--button-font-size);
+}
+
+.button-active {
+  color: white;
+  background-color: var(--color-secondary);
+}
+
+.button-active:hover {
+  background-color: var(--color-primary);
+}
+
+.button-outlined {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+  background-color: var(--color-light);
+}
+
+.button-outlined:hover {
+  color: var(--color-primary);
+}
+
+.button-text {
+  color: var(--color-secondary);
+  background-color: var(--color-light);
+}
+
+.button-text:hover {
+  color: var(--color-primary);
+}
+
+.icon {
+  margin: 4px;
+  fill: var(--color-grey-light);
+}
+
+.icon-button {
+  padding: 2px;
+  fill: var(--color-grey);
+}
+
+.icon-button:hover {
+  fill: var(--color-primary)
+}
+
+.icon-button-small {
+  height: 20px;
+  width: 20px;
+}
+
+.icon-button-middle {
+  height: 25px;
+  width: 25px;
+}
+
+.icon-button-huge {
+  height: 80px;
+  width: 80px;
+}
+
+.icon-green {
+  fill: darkgreen;
+}
+
+.flat-button {
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid var(--color-grey-light);
+  cursor: pointer;
+}

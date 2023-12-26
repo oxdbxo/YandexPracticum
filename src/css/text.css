@@ -1,0 +1,38 @@
+
+.p-2 {
+  line-height: 2em;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.nobold {
+  font-weight: 400 !important;
+}
+
+.text-error {
+  color: var(--color-error) !important;
+}
+
+.text-grey {
+  color: var(--color-grey) !important;
+}
+
+.text-grey2 {
+  color: var(--color-grey2) !important;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.link {
+  color: var(--color-secondary);
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.link:hover {
+  color: var(--color-primary);
+}

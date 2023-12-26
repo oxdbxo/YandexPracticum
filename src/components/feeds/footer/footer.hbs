@@ -1,0 +1,17 @@
+<div class="flex feeds-footer components-padding w-100">
+    <div>
+        {{#> IconButton className="icon-button-middle" }}
+            {{> SVGAttach}}
+        {{/IconButton}}
+    </div>
+    <form name="message_form" class="form-div" onsubmit="return false;">
+        <div class="flex-all">
+            {{> InputText placeholder="Введите сообщение" id="message" name="message" type="text" nolabel=true}}
+        </div>
+    </form>
+    <div class="ml-1">
+        {{#> IconButton className="icon-button-middle" }}
+            {{> SVGSend}}
+        {{/IconButton}}
+    </div>
+</div>

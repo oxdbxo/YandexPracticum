@@ -1,0 +1,32 @@
+@import './chat_list/chat_list.css';
+
+.left-panel {
+  border-right: var(--divider-border);
+}
+
+.left-panel-header {
+  flex-wrap: nowrap;
+  min-width: inherit;
+  max-width: inherit;
+}
+
+.header-text {
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  cursor: inherit;
+  color: var(--color-header);
+}
+
+.left-panel-footer {
+  border-top: var(--divider-border);
+  font-size: 80%;
+}
+
+.chat_list {
+  flex: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-width: 300px;
+}

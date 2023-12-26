@@ -1,0 +1,9 @@
+.avatar-div {
+  cursor: inherit;
+  width: fit-content;
+}
+
+.avatar-img {
+  fill: var(--color-grey-light);
+  cursor: inherit;
+}

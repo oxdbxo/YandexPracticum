@@ -1,0 +1,45 @@
+.chat-line {
+  height: 80px;
+  border-top: var(--divider-border-thin);
+  flex-wrap: nowrap;
+}
+
+.chat-line-selected {
+  background-color: var(--color-selected);
+}
+
+.chat-line:hover {
+  background-color: var(--color-selected);
+}
+
+.chat-line-avatar {
+  height: 60px;
+  width: 60px;
+}
+
+.chat-line-body {
+  margin-left: 0.5vw;
+}
+
+.chat-line-name {
+  text-overflow: ellipsis;
+  max-width: 200px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.chat-line-date {
+  font-size: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: var(--color-secondary);
+}
+
+.chat-line-message {
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+  font-style: italic;
+}
